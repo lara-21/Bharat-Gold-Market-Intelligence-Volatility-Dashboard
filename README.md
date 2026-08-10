@@ -1,229 +1,256 @@
-Bharat Gold Market Intelligence & Volatility Dashboard
-📌 Project Overview
+# 🪙 Bharat Gold Market Intelligence & Volatility Dashboard
 
-Bharat Gold Market Intelligence & Volatility Dashboard is a data analytics and business intelligence project focused on analyzing historical gold prices in India and understanding the factors that influence gold market movements.
+## 📌 Project Overview
 
-The project combines Python, SQL, and Power BI to clean, analyze, visualize, and interpret gold market data. The final interactive dashboard provides insights into gold price trends, volatility, USD-INR movements, seasonal patterns, and other important market indicators.
+This project analyzes historical gold market data to understand gold price movements, market volatility, USD-INR exchange rate movements, seasonal patterns, and other important market indicators.
 
-The project is designed to help stakeholders such as jewellers, traders, procurement teams, and buyers understand historical market behavior and make more informed decisions.
+The project combines **SQL, Python, Excel, and Power BI** to transform raw gold market data into meaningful analysis, KPIs, interactive dashboards, and actionable business insights.
 
-🎯 Business Problem
+The dashboard enables users to monitor gold price trends, volatility, monthly and quarterly patterns, USD-INR movements, and other market indicators through interactive visualizations and filters.
 
-Gold prices are influenced by several factors, including:
+---
 
-International gold prices
-USD-INR exchange rate
-Import duties and taxes
-Market volatility
-Seasonal demand
-Changes in the domestic market
+## 🎯 Project Objectives
 
-Analyzing these factors manually across a large historical dataset can be difficult.
+- Analyze historical gold price movements.
+- Evaluate gold price volatility over time.
+- Analyze the relationship between gold prices and the USD-INR exchange rate.
+- Identify monthly, quarterly, and yearly gold price patterns.
+- Examine the impact of import duties and taxes on domestic gold prices.
+- Develop business-focused KPIs.
+- Build an interactive Power BI dashboard.
+- Provide data-driven business insights and recommendations.
 
-This project aims to transform the raw gold market data into meaningful KPIs, trends, comparisons, and business insights through data cleaning, statistical analysis, SQL querying, and interactive Power BI visualizations.
+---
 
-🎯 Project Objectives
+## 🗂️ Dataset Information
 
-The main objectives of this project are to:
+- **Dataset:** Historical Gold Market Dataset
+- **Time Period:** 2013–2026
+- **Domain:** Gold Market & Financial Analytics
+- **Key Features:**
+  - Gold Prices
+  - Gold Open Price
+  - Gold High Price
+  - Gold Low Price
+  - USD-INR Exchange Rate
+  - Import Duty
+  - GST
+  - Domestic Gold Price
+  - Gold Imports
+  - Monthly Price Changes
+  - Year-over-Year Growth
+  - Date
+  - Month
+  - Quarter
+  - Year
 
-Analyze historical gold price movements.
-Study gold price volatility over time.
-Analyze the relationship between gold prices and the USD-INR exchange rate.
-Identify monthly and quarterly patterns.
-Analyze seasonal market behavior.
-Examine the impact of duties and taxes on domestic gold prices.
-Create meaningful business KPIs.
-Build an interactive Power BI dashboard.
-Provide data-driven business insights and recommendations.
-📊 Dataset
+---
 
-The project uses a combined historical gold market dataset covering the period 2013–2026.
+## 🛠️ Tools & Technologies
 
-The dataset contains information related to:
+- **Power BI** – Interactive Dashboard Development
+- **DAX** – KPI and analytical measure development
+- **SQL / MySQL** – Data Storage, Validation & Analysis
+- **Python** – Data Cleaning, EDA & Statistical Analysis
+- **Pandas** – Data Manipulation
+- **NumPy** – Numerical Analysis
+- **Matplotlib** – Data Visualization
+- **Seaborn** – Statistical Visualization
+- **SciPy** – Statistical Analysis
+- **Excel** – Initial Data Analysis & Summaries
+- **Jupyter Notebook** – Python Analysis
+- **Git & GitHub** – Version Control & Project Management
 
-Gold prices
-Gold opening and high prices
-USD-INR exchange rate
-Import duties
-GST
-Domestic gold prices
-Gold imports
-Monthly price changes
-Year-over-year growth
-Date and time-related fields
-Important columns include
-Column	Description
-Date	Date of the observation
-Year	Year extracted from the date
-Month_Number	Numeric month
-MonthName	Month name
-Quarter	Calendar quarter
-Gold_Price_USD_per_oz	Gold price in USD per ounce
-Gold_Open_USD	Opening gold price
-Gold_High_USD	Highest gold price
-Gold_Low_USD	Lowest gold price
-USD_INR_Rate	USD-INR exchange rate
-Import_Duty_Rate_Pct	Import duty percentage
-GST_Rate_Pct	GST percentage
-Gold_Price_INR_per_10g	Gold price in INR per 10 grams
-Rolling_Volatility_30D	30-day rolling volatility
-YoY_Growth_Pct	Year-over-year growth percentage
-🛠️ Tools & Technologies
+---
 
-The project uses the following technologies:
+## 🧹 Data Preparation
 
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-SciPy
-Jupyter Notebook
-MySQL
-SQL
-Power BI
-DAX
-Microsoft Excel
-Git & GitHub
+The following steps were performed before building the final dashboard:
 
-🔄 Project Workflow
-Raw Data
-   ↓
-Data Collection & Merging
-   ↓
-Data Cleaning & Validation
-   ↓
-SQL Database
-   ↓
-Python EDA
-   ↓
-Statistical Analysis
-   ↓
-KPI Development
-   ↓
-Power BI Dashboard
-   ↓
-Business Insights & Recommendations
-🧹 Data Cleaning & Preprocessing
+- Loaded and combined the required datasets.
+- Verified the total number of rows and columns.
+- Checked for duplicate records.
+- Checked missing and NULL values.
+- Converted the **Date** column to the correct date format.
+- Validated numeric and categorical columns.
+- Standardized **Month_Number**, **MonthName**, and **Quarter**.
+- Checked for inconsistent and invalid values.
+- Created derived date-related fields such as **Year, Month, and Quarter**.
+- Created analytical features including moving averages and rolling volatility.
+- Performed descriptive statistical analysis.
+- Performed distribution and outlier analysis.
+- Analyzed correlations between major gold price variables.
+- Loaded the cleaned data into SQL for further analysis.
+- Created SQL aggregations, KPI queries, and window-function analysis.
+- Imported the cleaned data into Power BI.
+- Created DAX measures for the major KPIs.
+- Validated dashboard calculations and visualizations.
 
-The dataset was cleaned and validated before analysis.
+---
 
-Major preprocessing steps included:
+# 📊 Dashboard Pages
 
-Checking row and column counts.
-Converting the Date column to the appropriate date format.
-Checking and handling missing values.
-Checking duplicate records.
-Standardizing Month_Number, MonthName, and Quarter.
-Checking numeric data types.
-Validating percentage-based columns.
-Checking inconsistent or invalid values.
-Creating derived date-related fields.
-Validating the cleaned dataset against the original data.
+## 1️⃣ Overview
 
-A separate cleaning log documents the major cleaning actions and validation results.
+Provides a summary of the gold market.
 
+### KPIs
 
-📈 Key KPIs
+- Latest Gold Price
+- Average Gold Price
+- Average Monthly Volatility
+- Average USD-INR Rate
+- Average YoY Growth
+
+### Visuals
+
+- Gold Price Trend
+- Average Gold Price by Quarter
+- Gold Price and USD-INR by Year
+
+### Filters
+
+- Year
+- Quarter
+- Month Name
+
+---
+
+## 2️⃣ Trend Analysis
+
+Shows how gold prices change over time.
+
+### Visuals
+
+- Gold Price Trend
+- Average Gold Price by Year
+- Gold Open, High and Low Prices
+- Gold Price vs USD-INR
+- Moving Average Trend
+
+### Features
+
+- Date and Year analysis
+- Interactive filters
+- Tooltips
+
+---
+
+## 3️⃣ Segment Analysis
+
+Shows gold market patterns across different segments.
+
+### Visuals
+
+- Average Gold Price by Month
+- Average Gold Price by Quarter
+- Duty and GST Contribution
+- Duty vs GST Comparison
+- Annual Gold Imports
+
+### Filters
+
+- Year
+- Quarter
+- Month Name
+
+---
+
+## 4️⃣ Drill Through
+
+Provides detailed information for the selected date or period.
+
+### Includes
+
+- Average Gold Price
+- Highest Gold Price
+- Lowest Gold Price
+- Average USD-INR Rate
+- Gold Price Details
+- USD-INR Rate
+- Gold Price Trend
+
+Users can drill through from the main dashboard to view detailed information.
+
+---
+
+## 🎨 Dashboard Features
+
+- KPI Cards
+- Interactive Filters
+- Trend Charts
+- Comparison Charts
+- Tooltips
+- Drill Through
+- Consistent Theme
+- 
+# 📈 Key KPIs
 
 The project focuses on business-oriented KPIs derived from the project blueprint.
 
-1. Average Monthly Price Volatility
+### 1. Average Monthly Price Volatility
 
-Measures the average level of gold price variation across months.
+Measures the average level of gold price variation across the analyzed months.
 
-2. USD-INR Correlation Coefficient
+### 2. USD-INR Correlation Coefficient
 
 Measures the strength and direction of the relationship between gold prices and the USD-INR exchange rate.
 
-3. Average Gold Price
-4. 
-Measures the average gold price over the years.
+### 3. Average Gold Price
 
-📊 Power BI Dashboard
+Measures the average gold price across the analyzed period.
 
-The final Power BI dashboard provides an interactive view of the gold market.
+---
 
-Dashboard Pages
-1. Overview
+# 💡 Business Insights
 
-Provides a high-level summary of the gold market using:
+The analysis focuses on identifying important market patterns such as:
 
-KPI cards
-Gold price summary
-Price trends
-USD-INR relationship
-Key business insights
-Interactive filters
-2. Trends Analysis
+1. Gold prices show significant changes across different years and market periods.
+2. Gold price, gold open price, and gold high price show a strong positive correlation because they represent closely related price measures within the same market.
+3. Certain months and quarters show different levels of average gold prices and volatility.
+4. USD-INR movements show an important relationship with gold prices and can be considered when analyzing domestic gold market behavior.
+5. Historical price and volatility patterns can help support procurement and market monitoring decisions.
 
-Focuses on changes in gold prices over time.
+> Final numerical insights are based on the cleaned dataset and the results generated through Python, SQL, and Power BI analysis.
 
-Includes:
+---
 
-Year-wise trends
-Date-based analysis
-Gold price movement
-USD-INR movement
-Volatility analysis
-Year → Quarter → Month → Date drill-down
-3. Segment Analysis
+# ✅ Recommendations
 
-Analyzes gold market behavior across different segments such as:
+- Monitor gold price volatility when planning procurement decisions.
+- Track USD-INR movements alongside gold prices.
+- Use monthly and quarterly trends to support inventory and procurement planning.
+- Track import duties and taxes when evaluating domestic gold prices.
+- Use historical price trends as a supporting factor rather than relying on a single market indicator.
+- Continuously monitor gold market KPIs through the Power BI dashboard.
 
-Month
-Quarter
-Year
-Seasonal patterns
-Price comparisons
-Market indicators
-4. Drill Through
+---
 
-Provides detailed drill-through analysis for selected dates or periods.
+# ⚠️ Dataset Limitations
 
-Includes:
+- Some variables contain missing values.
+- Certain annual indicators may not be available for every observation.
+- Historical data may come from different sources and methodologies.
+- Correlation indicates association but does not prove causation.
+- Historical seasonal patterns may not necessarily repeat in the future.
+- External factors such as geopolitical events, global economic conditions, and sudden policy changes may not be fully represented in the dataset.
 
-Daily gold price
-Opening price
-High price
-USD-INR rate
-Daily change
-Detailed market information
-🎨 Dashboard Features
+---
 
-The dashboard includes:
+# 🚀 How to Run the Project
 
-Interactive slicers
-KPI cards
-Drill-downs
-Drill-through analysis
-Tooltips
-Trend charts
-Comparison charts
-Business callouts
-Consistent color theme
-Accessibility-focused formatting
+1. Clone this repository.
+2. Install the required Python libraries using `requirements.txt`.
+3. Open the Jupyter notebooks in the `notebooks/` folder.
+4. Run the data cleaning and analysis notebooks.
+5. Use the SQL scripts in the `sql/` folder for database analysis.
+6. Open the Power BI `.pbix` file from the `dashboard/` folder using Power BI Desktop.
+7. Refresh the data if required.
+8. Explore the dashboard using filters, slicers, drill-downs, and drill-through functionality.
 
-The dashboard uses a dark navy and gold visual theme to match the gold-market context.
+---
 
-💡 Business Insights
-
-The analysis focuses on identifying insights such as:
-
-Long-term changes in gold prices.
-Periods of higher gold price volatility.
-Relationship between gold prices and USD-INR movements.
-Monthly and quarterly price patterns.
-Seasonal market behavior.
-Changes in domestic gold prices due to market and policy-related factors.
-
-⚠️ Dataset Limitations
-
-The analysis has some limitations:
-
-Some variables contain missing values.
-Certain annual indicators may not be available for every observation.
-Historical data may come from different sources and methodologies.
-Correlation measures association and does not prove causation.
-Seasonal patterns are based on historical observations and may not repeat in the future.
-External factors such as geopolitical events, global economic conditions, and sudden policy changes may not be fully represented in the dataset.
+├── .gitignore
+└── README.md
