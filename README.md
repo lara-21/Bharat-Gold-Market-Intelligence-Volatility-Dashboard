@@ -213,7 +213,7 @@ The analysis focuses on identifying important market patterns such as:
 4. USD-INR movements show an important relationship with gold prices and can be considered when analyzing domestic gold market behavior.
 5. Historical price and volatility patterns can help support procurement and market monitoring decisions.
 
-> Final numerical insights are based on the cleaned dataset and the results generated through Python, SQL, and Power BI analysis.
+
 
 ---
 
